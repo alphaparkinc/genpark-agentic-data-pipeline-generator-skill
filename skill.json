@@ -1,0 +1,34 @@
+{
+  "name": "genpark-agentic-data-pipeline-generator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Autonomous ETL data pipeline builder with automatic schema migration.",
+  "author": "genpark",
+  "category": "operations",
+  "tags": [
+    "etl-pipeline",
+    "data-engineering",
+    "schema-migration",
+    "pipeline-generator"
+  ],
+  "inputs": {
+    "source_type": {
+      "type": "string"
+    },
+    "destination_type": {
+      "type": "string"
+    },
+    "transformation_rules": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "pipeline_config": {
+      "type": "object"
+    },
+    "pipeline_status": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
